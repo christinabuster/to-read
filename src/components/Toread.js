@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
 // This is JSX
-class Toread extends Component {
+class Toreads extends Component {
  render() {
-  return (
-    <div>
-     <h1> TOreads </h1>
-    </div>
-  );
+   // .map is a high order array method and returns an array from an array
+   // use .map here to loop (like a for each) through the array and output JSX
+  return this.props.toreads.map((toread) => (
+    <h3>{ toread.title }</h3>
+  ));
  }
 }
 
-export default Toread;
+export default Toreads;
